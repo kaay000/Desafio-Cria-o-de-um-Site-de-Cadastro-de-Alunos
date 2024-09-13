@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Cadastro</title>
+  </head>
+  <body>
+    <section>
+      <form action="lista.html" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required /> <br />
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" name="nascimento" id="dnascimento" required /> <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required /> <br />
+        <label for="turma">Turma:</label>
+        <select name="turma" id="turma" required>
+          <option value="">Escolha a Turma</option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option></select
+        ><br />
+        <label for="genero">Gênero:</label>
+        <input type="radio" name="genero" id="genero" required /> Masculino
+        <input type="radio" name="genero" id="genero" required /> Feminino
+        <input type="radio" name="genero" id="genero" required /> Outro <br />
+        <label for="preferencias">Preferências:</label>
+        <input type="checkbox" name="preferencias" id="preferencias" />Esportes
+        <input type="checkbox" name="preferencias" id="preferencias" />Música
+        <input type="checkbox" name="preferencias" id="preferencias" />Artes
+        <br />
+        <label for="observaçoes">Observações:</label>
+        <textarea
+          name="observações"
+          id="observaçoes"
+          rows="4"
+          required
+        ></textarea>
+        <br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </body>
+</html>
